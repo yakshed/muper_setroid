@@ -17,6 +17,8 @@ define_behavior :animate_once do
                          second_animation_in: nil
     actor.has_attributes :image, :width, :height
 
+    actor.second_animation_in = opts[:second_animation_in]
+
     action_changed nil, actor.action
 
     director.when :update do |time|
