@@ -18,15 +18,12 @@ Gamebox.configure do |config|
   config.gb_sound_path = GAMEBOX_PATH + "data/sounds/"
   config.gb_gfx_path = GAMEBOX_PATH + "data/graphics/"
   config.gb_fonts_path = GAMEBOX_PATH + "data/fonts/"
-  
-  # config.stages = [:demo]
-  # config.game_name = "Untitled Game"
+
+  config.stages = [:intro]
+  config.game_name = "Muper Setroid"
 end
 
 [GAMEBOX_PATH, APP_ROOT, File.join(APP_ROOT,'src')].each{|path| $: << path }
 require "gamebox_application"
 
 require_all Dir.glob("{src,lib}/**/*.rb").reject{ |f| f.match("src/app.rb")}
-
-
-
