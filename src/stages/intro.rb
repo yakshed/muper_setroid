@@ -1,6 +1,7 @@
 define_stage :intro do
   curtain_up do
     create_actor :splash_screen
+    create_actor :game_title
 
     input_manager.reg :down, KbSpace do
       fire :next_stage
