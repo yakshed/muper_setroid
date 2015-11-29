@@ -1,7 +1,7 @@
 --- 
 :title: Muper Setroid
 :sound: true
-:auto_quit: KbEscape
+:auto_quit: false
 :fullscreen: false
 :screen_resolution: 
 - 628
