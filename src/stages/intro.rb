@@ -5,6 +5,8 @@ end
 
 define_stage :intro do
   curtain_up do
+    sound_manager.play_music :title
+
     create_actor :splash_screen
     create_actor :game_title
 
