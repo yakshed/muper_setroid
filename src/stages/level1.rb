@@ -21,14 +21,15 @@ define_stage :level1 do
 
     create_actor :background, anchor: :top_left
 
-    @samus = create_actor :samus, x: 120, y: 140
+    @samus = create_actor :samus, x: 130, y: 90
+    @ship = create_actor :ship, x: 1700, y: 10
 
     input_manager.reg :down, KbLeft do
       @samus.react_to :moving_left
     end
 
     input_manager.reg :up, KbLeft do
-      @samus.react_to :stop
+      @samus.react_to :stop_movement
     end
 
     input_manager.reg :down, KbRight do
@@ -36,12 +37,12 @@ define_stage :level1 do
     end
 
     input_manager.reg :up, KbRight do
-      @samus.react_to :stop
+      @samus.react_to :stop_movement
     end
 
     physics_manager.restart_physics
 
-    # viewport.follow @samus, [0,70], [200,100]
+    viewport.stay_centered_on @samus, x_offset: 20, y_offset: 20
   end
 
   curtain_down do
