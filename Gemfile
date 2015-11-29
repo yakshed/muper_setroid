@@ -3,6 +3,7 @@ source "https://rubygems.org"
 # gem 'chipmunk'
 gem 'require_all'
 gem "gamebox", '~> 0.5.0'
+gem "chipmunk"
 gem "conject"
 gem "rspec"
 gem "releasy"
