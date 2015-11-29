@@ -19,7 +19,7 @@ Gamebox.configure do |config|
   config.gb_gfx_path = GAMEBOX_PATH + "data/graphics/"
   config.gb_fonts_path = GAMEBOX_PATH + "data/fonts/"
 
-  config.stages = [:intro]
+  config.stages = [:intro, :level1]
   config.game_name = "Muper Setroid"
 end
 
